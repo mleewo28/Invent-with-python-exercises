@@ -1,20 +1,23 @@
-
 def main(): 
-    
-    def ordinalSuffix(number): 
+
+    def ordinalSuffix(number):
         str_num = str(number)
-        if str_num[-1] != '1' or str_num[-1] != '2' or str_num[-1] != '3' or str_num[-2] == '1':
+
+        if str_num[-2:] in ('11','12','13'):
             return str_num + "th"
         
-        elif str_num[-1] == '1': 
+        elif str_num[-1] =='1':
             return str_num + "st"
         
-        elif str_num[-1]=='2': 
+        elif str_num[-1] =='2':
             return str_num + "nd"
         
-        elif str_num[-1] == '3': 
-            return str_num + "rd" 
+        elif str_num =='3': 
+            return str_num + "rd"
         
+        else: 
+            return str_num + "th"
+    
     assert ordinalSuffix(0) == '0th'
 
     assert ordinalSuffix(1) == '1st'
