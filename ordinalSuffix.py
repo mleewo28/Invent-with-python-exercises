@@ -3,6 +3,12 @@ def main():
     
     def ordinalSuffix(number): 
         str_num = str(number)
+
+        # try: 
+        #     if str_num in ('11', '12', '13'): 
+        # except: 
+        #     return str_num + 'th'
+
         if str_num[-1] != '1' and str_num[-1] != '2' and str_num[-1] != '3' and str_num[-2:] == '1':
             return str_num + "th"
         
