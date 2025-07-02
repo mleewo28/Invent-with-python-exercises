@@ -1,4 +1,4 @@
-def getChessSquareColour(column,row): 
+def getChessSquareColour(row,column): 
     
     for row in range(0,8):
         for column in range(0,8): 
