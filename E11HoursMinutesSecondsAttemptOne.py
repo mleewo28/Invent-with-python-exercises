@@ -17,3 +17,7 @@ def getHoursMinutesSeconds(totalSeconds):
         else: 
             seconds = remainder
             remainder = 0 
+
+        return f"{hours}h {mins}m {seconds}s"
+
+assert getHoursMinutesSeconds(3661) == '1h 1m 1s'
