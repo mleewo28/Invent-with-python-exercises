@@ -1,4 +1,4 @@
-def getChessSquareColour(column,row): 
+def getChessSquareColour(row,column): 
     
     #Account for arguments outside of the 0 to 7 range for 'row' and 'column'
     if row > 7 or row < 0 or column > 7 or column < 0:
