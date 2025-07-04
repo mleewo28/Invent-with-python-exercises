@@ -7,14 +7,14 @@ def median(numbers):
     if length ==0: 
         return None 
     else: 
-        sorted = numbers.sort() 
+        new_sort = sorted(numbers)
         if length % 2 == 1: 
             index = length//2 
-            return sorted[index]
+            return new_sort[index]
         else: 
             index_one = length//2
             index_two = (length//2) - 1
-            median = (sorted[index_one] + sorted[index_two])/2
+            median = (new_sort[index_one] + new_sort[index_two])/2
             return median 
         
 assert median([]) == None
