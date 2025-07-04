@@ -3,8 +3,12 @@ def main():
     #Write to greet.txt
     outfile.write('Hello!\n')
     #Append to greet.txt
-    with open('greet.txt','a') as outfile: 
-        outfile.write('Goodbye!\n')
+
+    outfile = open("greet.txt", "a")
+    outfile.write('Goodbye!\n')
+
+    # with open('greet.txt','a') as outfile: 
+    #     outfile.write('Goodbye!\n')
     
     
     outfile.close()
