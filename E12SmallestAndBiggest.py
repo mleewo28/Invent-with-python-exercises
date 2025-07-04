@@ -20,7 +20,7 @@ def getLargest(numbers):
     length = len(numbers)
 
     #Account for empty list 
-    if numbers =='':
+    if length ==0:
         return None
     
     else: 
@@ -43,3 +43,13 @@ assert getSmallest([28, 25, 42, 2, 28]) == 2
 assert getSmallest([1]) == 1
 
 assert getSmallest([]) == None
+
+assert getLargest([1, 2, 3]) == 3
+
+assert getLargest([3, 2, 1]) == 3
+
+assert getLargest([28, 25, 42, 2, 28]) == 42
+
+assert getLargest([1]) == 1
+
+assert getLargest([]) == None
