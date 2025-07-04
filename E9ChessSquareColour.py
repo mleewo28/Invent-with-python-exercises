@@ -5,8 +5,8 @@ def getChessSquareColour(row,column):
         return ''
     elif (row % 2 == 0 and column % 2 == 0) or (row % 2 == 1 and column % 2 == 1): 
         return 'white'
-    else: 
-        return 'black'
+    
+    return 'black'
             
 assert getChessSquareColour(0, 0) == 'white'
 
