@@ -4,15 +4,16 @@ def mode(numbers):
     if length ==0: 
         return None 
     
-    old_highest_count = 1 
-    new_highest_count = 1
-    for i in range(length-1):
+    highest_count = 1 
+    
+    for i in range(length):
+        count = 1 
         for j in range(i+1,length):
             if numbers[j] == numbers[i]:
-                new_highest_count +=1
-                if new_highest_count > old_highest_count:
-                    mode =numbers[j]
-                    old_highest_count = new_highest_count
+                count +=1
+        if count > highest_count:
+            highest_count = count
+            mode =numbers[i]
     
     return mode 
 
