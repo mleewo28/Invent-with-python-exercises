@@ -23,6 +23,8 @@ def generatePassword(length):
     random.shuffle(password)
 
     return ''.join(password)
+
+#print(generatePassword(20))
     
 
 assert len(generatePassword(8)) == 12
