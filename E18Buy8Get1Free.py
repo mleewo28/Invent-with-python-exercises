@@ -8,6 +8,7 @@ def getCostOfCoffee(numOfCoff,pricePerCoff):
         #8 were paid for 
         num_ticket = numOfCoff//9
         paid_coffees = num_ticket*8
+        # [56 + (67-63)] x price 
         price = (paid_coffees + (numOfCoff - 9*num_ticket))*pricePerCoff
 
     return price 
