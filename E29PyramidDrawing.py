@@ -12,3 +12,5 @@ def drawPyramid(height):
         row += 1 
 
 drawPyramid(5)
+drawPyramid(2)
+drawPyramid(10)
