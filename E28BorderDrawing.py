@@ -19,7 +19,7 @@ def drawBorder(width,height):
     #loop through to complete all rows expect for the top and bottom row 
     for j in range(height - 2):
         print('|', end = '')
-        print(' ', end = '')
+        print(' '*(width-2), end = '')
         print('|')
 
     #bottom row 
