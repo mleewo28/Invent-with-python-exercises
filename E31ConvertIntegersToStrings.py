@@ -23,7 +23,7 @@ def convertIntToStr(integerNum):
 
     return strNum 
 
-convertIntToStr(-1000)
+#convertIntToStr(-1000)
 
 for i in range(-10000,10000):
 
