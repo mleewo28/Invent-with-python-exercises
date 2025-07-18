@@ -17,9 +17,9 @@ def convertIntToStr(integerNum):
         integerNum = integerNum//10 
     
     if isNegative:
-        return '-' + strNum
+        return ('-' + strNum)
     
-    print(strNum)
+    #print(strNum)
 
     return strNum 
 
