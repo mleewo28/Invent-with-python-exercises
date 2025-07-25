@@ -1,7 +1,7 @@
 import random 
 
 def shuffle(values): 
-    for i in range(len(values) - 1): 
+    for i in range(len(values)): 
         random_index = random.randint(0,len(values)-1)
         values[i], values[random_index] = values[random_index], values[i] 
 
