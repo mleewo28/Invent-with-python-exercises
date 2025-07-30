@@ -6,16 +6,16 @@ def collatz(startingNumber):
     if startingNumber < 1:
         return [] 
     else: 
-        sequence = sequence.append(startingNumber)
+        sequence.append(startingNumber)
 
     #create the sequence using even and odd properties 
     while startingNumber > 1: 
         if startingNumber % 2 ==0: 
             startingNumber = startingNumber//2 
-            sequence = sequence.append(startingNumber)
+            sequence.append(startingNumber)
         else: 
             startingNumber = (3*startingNumber) + 1 
-            sequence = sequence.append(startingNumber)
+            sequence.append(startingNumber)
 
     return sequence
 
