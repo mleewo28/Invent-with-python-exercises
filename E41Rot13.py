@@ -4,18 +4,18 @@ def rot13(text):
     for char in text: 
         if char.isalpha(): 
             if char.islower():
-                if ord('char') <= 109: 
-                    encrypted_text += chr(ord('char') +13) 
+                if ord(char) <= 109: 
+                    encrypted_text += chr(ord(char) +13) 
                 else: 
-                    encrypted_text += chr(ord('char') - 13)
+                    encrypted_text += chr(ord(char) - 13)
             else: 
                 #the character is uppercase 
-                if ord('char') <= 77:
-                    encrypted_text += chr(ord('char') +13)
+                if ord(char) <= 77:
+                    encrypted_text += chr(ord(char) +13)
                 else: 
-                    encrypted_text += chr(ord('char') -13)
+                    encrypted_text += chr(ord(char) -13)
         else: 
-            encrypted_text += 'char'
+            encrypted_text += char
 
 
 assert rot13('Hello, world!') == 'Uryyb, jbeyq!'
