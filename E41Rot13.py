@@ -16,6 +16,8 @@ def rot13(text):
                     encrypted_text += chr(ord(char) -13)
         else: 
             encrypted_text += char
+    
+    return encrypted_text
 
 
 assert rot13('Hello, world!') == 'Uryyb, jbeyq!'
