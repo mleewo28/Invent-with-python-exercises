@@ -15,3 +15,6 @@ if __name__ == "__main__":
 
 # if __name__ == "__main__":
 #     main() 
+
+def test(): 
+    print("Thank you for not prediciting my text, period.")
